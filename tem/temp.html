@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .audio-player {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#play-pause {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #333;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #00cc00;
+    transition: width 0.1s linear;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="audio-player">
+        <audio id="audio" src="../songs/Jee_Karr_Daa_Harrdy_Sandhu.mp3"></audio>
+        <div class="controls">
+            <button id="play-pause" class="play">Play</button>
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        const audio = document.getElementById('audio');
+const playPauseButton = document.getElementById('play-pause');
+const progressBar = document.getElementById('progress-bar');
+const progress = document.getElementById('progress');
+
+playPauseButton.addEventListener('click', function() {
+    if (audio.paused) {
+        audio.play();
+        playPauseButton.textContent = 'Pause';
+    } else {
+        audio.pause();
+        playPauseButton.textContent = 'Play';
+    }
+});
+
+audio.addEventListener('timeupdate', function() {
+    const percentage = (audio.currentTime / audio.duration) * 100;
+    progress.style.width = percentage + '%';
+});
+
+progressBar.addEventListener('click', function(e) {
+    const clickPosition = e.offsetX / progressBar.offsetWidth;
+    const clickTime = clickPosition * audio.duration;
+    audio.currentTime = clickTime;
+});
+
+    </script>
+</body>
+</html>

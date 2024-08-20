@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="Spotify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/font/font.css">
+</head>
+
+<body>
+   
+    <div class="container display-flex">
+        <div class="left border pd-1 ">
+            <div class="home bg-grey rounded-1 ">
+                <img class="invert" src="./svg/logo.svg" alt="Spotify">
+                <ul>
+                    <li class="display-flex align-items roboto-bold hover-undln"><img class="invert"
+                            src="./svg/home.svg" alt="Home">Home</li>
+                    <li class="display-flex align-items roboto-bold hover-undln"><img class="invert"
+                            src="./svg/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded-1 pd-1 mg-1 ">
+            <div class="yourlibrary">
+                <div class="yourhead">
+                    <img class="invert library-img" src="./svg/library.svg" alt="library">
+                <h3 class="roboto-bold hover-undln">Your Library</h3>
+                </div>
+                
+                <div class="head-li ">
+
+                </div>
+            </div>
+                
+                <div class="links roboto-regular pd-1">
+                    <a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink">
+                        <span data-encore-id="type">Legal</span>
+                    </a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/" data-encore-id="textLink">
+                        <span data-encore-id="type">Safety &amp; Privacy Center</span>
+                    </a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/" data-encore-id="textLink">
+                        <span data-encore-id="type">Privacy Policy</span>
+                    </a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/" data-encore-id="textLink">
+                        <span data-encore-id="type">Cookies</span>
+                    </a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" data-encore-id="textLink">
+                        <span data-encore-id="type">About Ads</span>
+                    </a>
+                    <a href="https://www.spotify.com/in-en/accessibility/" data-encore-id="textLink">
+                        <span data-encore-id="type">Accessibility</span>
+                    </a>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                        <span data-encore-id="text">Cookies</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="right border">
+            <div class="header bg-grey ">
+                <span class="left-both">
+                    <img class="back-for invert" src="./svg/back.svg" alt="Back">
+                    <img class="back-for invert" src="./svg/forward.svg" alt="Forward">
+                </span>
+
+                <span>
+                    <button class="sign sign-log roboto-bold">
+                        Sign up
+                    </button>
+                    <button class="sign-log roboto-bold">
+                        Log in
+                    </button>
+                </span>
+
+            </div>
+
+            <div class="popular pd-1 ">
+                <div class="head-pop">
+                    <h2 class="roboto-bold hover-undln">Popular artists</h2> <span
+                        class="roboto-regular hover-undln">show all</span>
+                </div>
+
+                <div class="cards">
+                    <div class="crd">
+                        <img class="artist" aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                            data-testid="card-image" alt="">
+
+                        <p class="roboto-bold color-white">Pritam</p>
+                        <p>Artist</p>
+
+                    </div>
+
+                    <div class="crd">
+                        <img class="artist" aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3"
+                            data-testid="card-image" alt="">
+
+                        <p class="roboto-bold color-white">Arigit Singh</p>
+                        <p>Artist</p>
+
+                    </div>
+
+                    <div class="crd">
+                        <img class="artist" aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                            data-testid="card-image" alt="">
+                        <p class="roboto-bold color-white">A.R. Rahman </p>
+                        <p>Artist</p>
+
+                    </div>
+
+                    <div class="crd">
+                        <img class="artist" aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                            data-testid="card-image" alt="">
+
+                        <p class="roboto-bold color-white">Pritam</p>
+                        <p>Artist</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+
+   
+        <div class="playbar ">
+
+            <div class="outerbarbtn">
+                
+                
+                <div class="playbtns display-flex ">
+                <img class="invert playsize prebtn" src="./svg/prev.svg" alt="">
+                <img class="invert playp" src="./svg/playblack.svg" alt="">
+                <img class="invert playsize nxtbtn" src="./svg/next.svg" alt="">
+                </div>
+
+
+                <div class="playzone">
+                    <hr class="finished">
+                      <hr class="seekbar">   
+                    <div class="circle"></div>
+                    </div>
+                
+                <div class="time Roboto">
+                        00:00/00:00
+                </div>
+                </div>
+           
+
+            </div>
+           
+        
+    </div>
+
+   
+    <script src="play_button.js"></script>
+    <script src="spotify.js"></script>
+</body>
+
+</html>

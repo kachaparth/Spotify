@@ -1,0 +1,62 @@
+.display-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.border {
+    /* border: 2px solid blue; */
+}
+
+.bg-color {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.pd-1 {
+    padding: 20px;
+}
+
+.rounded-1 {
+    border-radius: 7px;
+}
+
+.mg-1 {
+    margin: 3px;
+}
+
+.hover-undln:hover {
+    transition:all 0.9s;
+    text-decoration: underline;
+    
+    color: white;
+}
+
+.color-white{
+    color: white;
+}
+.play{
+    
+    width: 3.1rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    
+}
+
+.playsize{
+   height: 15px;
+   width: 15px;
+}
